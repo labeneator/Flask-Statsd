@@ -2,15 +2,15 @@ from setuptools import setup
 
 
 setup(
-    name='flask-statsd-tags',
-    version='2.0.0',
-    url='https://github.com/gfreezy/flask-statsd/',
+    name='flask-carbon-statsd',
+    version='0.0.1',
+    url='https://github.com/labeneator/flask_carbon_statsd.git',
     license='BSD',
-    author='gfreezy',
-    author_email='gfreezy@gmail.com',
-    description='Flask metrics in Influx Statsd format.',
+    author='lmwangi',
+    author_email='l.mwangi@gmail.com',
+    description='Flask metrics in Carbon Statsd format.',
     long_description=__doc__,
-    py_modules=['flask_statsd'],
+    py_modules=['flask_carbon_statsd'],
     zip_safe=False,
     include_package_data=True,
     platforms='any',

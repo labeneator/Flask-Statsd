@@ -1,11 +1,11 @@
 # Flask-Statsd
 
-Generate and send Flask metrics in [Influx Statsd](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/statsd#influx-statsd) format.
+Generate and send Flask metrics in [Graphite Carbon Format](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/statsd#influx-statsd) format.
 
 
 # Install
 ```bash
-pip install flask-statsd-tags
+pip install flask-carbon-statsd
 ```
 
 
@@ -13,10 +13,10 @@ pip install flask-statsd-tags
 ```python
 # myapp.py
 from flask import Flask, Blueprint
-from flask_statsd import FlaskStatsd
+from flask_carbon_statsd import FlaskCarbonStatsd
 
 app = Flask(__name__)
-FlaskStatsd(app=app, host='localhost', port=8125)
+FlaskCarbonStatsd(app=app, host='localhost', port=8125)
 
 @app.route('/app/download')
 def app_download():
